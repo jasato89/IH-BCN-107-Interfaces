@@ -1,13 +1,16 @@
 package com.ironhack;
 
+import java.math.BigDecimal;
+
 public abstract class Account {
 
     private long accountNumber;
     private String customerName;
     private double balance;
 
+
     public Account() {
-        
+
     }
 
     public Account(long accountNumber, String customerName, double balance) {
@@ -35,7 +38,7 @@ public abstract class Account {
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
     }
-    
+
     public void setCustomerName(String name, String surname) {
         this.customerName = name + surname;
     }

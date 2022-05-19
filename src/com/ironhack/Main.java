@@ -1,5 +1,7 @@
 package com.ironhack;
 
+import com.ironhack.IntList.IntArray;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
@@ -23,7 +25,6 @@ public class Main {
         TransactionList transactionList = new PaymentList();
 
 
-         */
         double a = 0.70;
         double b = 0.10;
         double c = .2;
@@ -62,6 +63,17 @@ public class Main {
         // (x - 0.8).
 
         System.out.println(performOperation(new BigDecimal("1")));
+
+         */
+        IntArray intArray = new IntArray();
+
+        for (int i = 0; i < 25; i++) {
+            intArray.add(i);
+        }
+
+        for (int i : intArray.getFullArray()) {
+            System.out.println(i);
+        }
 
     }
 
