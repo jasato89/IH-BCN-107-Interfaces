@@ -78,7 +78,7 @@ public class Main {
          */
 
 
-        for (int i : balancer(new int[]{1, 3, 4, 2, 5, 7}, 67)) {
+        for (int i : balancer(new int[]{}, 67)) {
             System.out.println(i);
         }
 
