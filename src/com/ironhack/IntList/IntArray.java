@@ -18,6 +18,7 @@ public class IntArray implements IntList{
             int[] newArray = new int[newLength];
 
             for (int i = 0; i < array.length; i++) {
+
                 newArray[i] = array[i];
             }
 

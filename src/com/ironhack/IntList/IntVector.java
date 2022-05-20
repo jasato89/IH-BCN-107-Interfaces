@@ -6,13 +6,13 @@ public class IntVector implements IntList {
     private int counter;
 
     public IntVector() {
-        this.numbers = new int[10];
+        this.numbers = new int[20];
         counter = 0;
     }
 
     public void add(int value) {
 
-        if (counter > numbers.length) {
+        if (counter < numbers.length) {
             numbers[counter] = value;
             counter++;
         } else {
