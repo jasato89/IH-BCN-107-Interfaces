@@ -11,7 +11,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /*
         Empresa empresa = new Empresa("asdsad","Ironhack", 25);
         SociedadAnonima sa = new SociedadAnonima("234234", "Facebook", 145, 220.0, 1000);
 
@@ -64,7 +63,6 @@ public class Main {
 
         System.out.println(performOperation(new BigDecimal("1")));
 
-         */
         IntArray intArray = new IntArray();
 
         for (int i = 0; i < 25; i++) {
@@ -75,9 +73,47 @@ public class Main {
             System.out.println(i);
         }
 
+
+
+        for (int i : balancer(new int[]{1, 3, 4, 2, 5, 7}, 67)) {
+            System.out.println(i);
+        }
+
+        System.out.println("Estoy en la rama develop");
+
+
     }
 
-    public static BigDecimal performOperation(BigDecimal x){
+    public static int[] balancer(int[] array, int sum) {
+
+        while (getSum(array) < sum) {
+
+            int lowerIndex = 0;
+            int lowerValue = Integer.MAX_VALUE;
+
+            for(int i=0; i<array.length; i++) {
+                if (array[i] < lowerValue) {
+                    lowerIndex = i;
+                    lowerValue = array[i];
+                }
+            }
+            array[lowerIndex]++;
+
+        }
+
+        return array;
+
+    }
+
+    private static int getSum(int[] array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return sum;
+    }
+
+    public static BigDecimal performOperation(BigDecimal x) {
         BigDecimal a = (new BigDecimal("2.3")
                 .multiply(x))
                 .add(new BigDecimal("1.5"));
