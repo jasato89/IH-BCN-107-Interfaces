@@ -54,39 +54,6 @@ public class Main {
         System.out.println(result);
 
 
-        System.out.println("División infinita " + b1.divide(b3, 3, RoundingMode.HALF_EVEN).multiply(result));
-
-        System.out.println("Comparar números: " + b2.compareTo(b2));
-
-        //As a challenge, determine how to
-        // perform  the following
-        // operation (2.3 * x + 1.5)
-        // /
-        // (x - 0.8).
-
-        System.out.println(performOperation(new BigDecimal("1")));
-
-        IntArray intArray = new IntArray();
-
-        for (int i = 0; i < 25; i++) {
-            intArray.add(i);
-        }
-
-        for (int i : intArray.getFullArray()) {
-            System.out.println(i);
-        }
-         */
-
-
-        for (int i : balancer(new int[]{}, 67)) {
-            System.out.println(i);
-        }
-
-        System.out.println("Estoy en la rama develop Jaume");
-        System.out.println("Estoy en la rama develop");
-        System.out.println("Estoy en la rama develop");
-        System.out.println("Estoy en la rama develop");
-        System.out.println("Estoy en la rama develop");
 
 
     }
